@@ -1,16 +1,23 @@
 PODS:
   - DynamicTypeHelper (0.1.0)
+  - SwiftLint (0.25.1)
 
 DEPENDENCIES:
   - DynamicTypeHelper (from `../`)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   DynamicTypeHelper:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DynamicTypeHelper: d7d64087dbd8ecc78e78bdf54b916700dfde35ed
+  DynamicTypeHelper: 2a9b1e60b01a7aeecd49cb387ae24e308a6dab7a
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: 604337e8e3bfb11cdd15a3a1255462cacc289522
+PODFILE CHECKSUM: cdbe3cbdee959c4b012c6a3a2d202c269e2190e2
 
 COCOAPODS: 1.5.0

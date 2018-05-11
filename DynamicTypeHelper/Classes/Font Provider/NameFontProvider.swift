@@ -13,7 +13,7 @@ class NameFontProvider: NSObject, ScaledFontProviding {
 
     func font(forTextStyle textStyle: UIFontTextStyle) -> UIFont {
         guard let name = fontName else {
-            fatalError("fontName is not set")
+            return UIFont.preferredFont(forTextStyle: textStyle)
         }
         let font = UIFont.preferredFont(forTextStyle: textStyle)
         let customFont = UIFont(name: name, size: font.lineHeight)
