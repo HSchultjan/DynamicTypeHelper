@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DynamicTypeHelper_Example' do
+  pod 'DynamicTypeHelper', :path => '../'
+
+  target 'DynamicTypeHelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

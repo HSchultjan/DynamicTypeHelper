@@ -1,0 +1,16 @@
+PODS:
+  - DynamicTypeHelper (0.1.0)
+
+DEPENDENCIES:
+  - DynamicTypeHelper (from `../`)
+
+EXTERNAL SOURCES:
+  DynamicTypeHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DynamicTypeHelper: a5bf0cd196a8bf6f858557058ec8a4591a4e4cb5
+
+PODFILE CHECKSUM: 604337e8e3bfb11cdd15a3a1255462cacc289522
+
+COCOAPODS: 1.5.0
