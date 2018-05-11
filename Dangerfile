@@ -18,10 +18,10 @@ end
 
 # Check for Podfile updates.
 podfile_updated = !git.modified_files.grep(/Podfile/).empty?
-podspec_updated = !git.modified_files.grep(/Podspec/).empty?
+podfile_updated = !git.modified_files.grep(/Podspec/).empty?
 
 # Leave warning, if Podfile changes
-if podfile_updated || podspec_updated
+if podfile_updated
   warn "The `Podfile` or `Podspec` was updated"
 end
 
