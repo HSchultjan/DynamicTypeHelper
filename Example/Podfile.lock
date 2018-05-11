@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DynamicTypeHelper: a5bf0cd196a8bf6f858557058ec8a4591a4e4cb5
+  DynamicTypeHelper: d7d64087dbd8ecc78e78bdf54b916700dfde35ed
 
 PODFILE CHECKSUM: 604337e8e3bfb11cdd15a3a1255462cacc289522
 
