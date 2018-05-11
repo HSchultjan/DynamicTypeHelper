@@ -5,6 +5,7 @@ target 'DynamicTypeHelper_Example' do
 
   target 'DynamicTypeHelper_Tests' do
     inherit! :search_paths
+    pod 'DynamicTypeHelper', :path => '../'
 
     
   end

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DynamicTypeHelper: NSObject {
+public class DynamicTypeHelper: NSObject {
 
     @IBInspectable var fontName: String?
     @IBOutlet var fontProvider: ScaledFontProviding?
