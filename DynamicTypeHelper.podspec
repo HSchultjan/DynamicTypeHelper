@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DynamicTypeHelper'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DynamicTypeHelper.'
+  s.summary          = 'DynamicTypeHelper makes working with storyboards and dynamic type easier when you are using a custom font.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  DynamicTypeHelper allows you to leverage the power of storyboards while maintaining the ability to use dynamic type with custom fonts.
                        DESC
 
   s.homepage         = 'https://github.com/hschultjan/DynamicTypeHelper'
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'DynamicTypeHelper/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'DynamicTypeHelper' => ['DynamicTypeHelper/Assets/*.png']
   # }
