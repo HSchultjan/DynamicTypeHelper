@@ -52,7 +52,7 @@ class FallbackTests: XCTestCase {
         if #available(iOS 11.0, *) {
             XCTAssertEqual(label.font, UIFont.preferredFont(forTextStyle: .largeTitle))
         } else {
-            XCTFail()
+            XCTFail("targets below iOS 11 are not supported yet")
         }
     }
 

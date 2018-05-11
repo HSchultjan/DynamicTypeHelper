@@ -13,17 +13,25 @@ public class DynamicTypeHelper: NSObject {
     @IBOutlet var fontProvider: ScaledFontProviding?
     @IBOutlet var layoutView: UIView?
 
+    private var observer: NSObjectProtocol?
+
     override init() {
         super.init()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil, queue: nil) { (notification) in
+        self.observer = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil, queue: nil) { _ in
             // TODO: Handle size changes
             fatalError("not supported yet")
         }
     }
 
+    deinit {
+        guard let observer = observer else { return }
+        NotificationCenter.default.removeObserver(observer)
+        self.observer = nil
+    }
+
     @IBOutlet var largeTitle: [UIView]! {
         didSet {
-            largeTitle.forEach { (view) in
+            largeTitle.forEach { view in
                 if #available(iOS 11.0, *) {
                     self.set(fontFor: .largeTitle, on: view)
                 } else {
@@ -35,7 +43,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var title1: [UIView]! {
         didSet {
-            title1.forEach { (view) in
+            title1.forEach { view in
                 self.set(fontFor: .title1, on: view)
             }
         }
@@ -43,7 +51,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var title2: [UIView]! {
         didSet {
-            title2.forEach { (view) in
+            title2.forEach { view in
                 self.set(fontFor: .title2, on: view)
             }
         }
@@ -51,7 +59,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var title3: [UIView]! {
         didSet {
-            title3.forEach { (view) in
+            title3.forEach { view in
                 self.set(fontFor: .title3, on: view)
             }
         }
@@ -59,7 +67,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var headline: [UIView]! {
         didSet {
-            headline.forEach { (view) in
+            headline.forEach { view in
                 self.set(fontFor: .headline, on: view)
             }
         }
@@ -67,7 +75,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var subheadline: [UIView]! {
         didSet {
-            subheadline.forEach { (view) in
+            subheadline.forEach { view in
                 self.set(fontFor: .subheadline, on: view)
             }
         }
@@ -75,7 +83,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var body: [UIView]! {
         didSet {
-            body.forEach { (view) in
+            body.forEach { view in
                 self.set(fontFor: .body, on: view)
             }
         }
@@ -83,7 +91,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var callout: [UIView]! {
         didSet {
-            callout.forEach { (view) in
+            callout.forEach { view in
                 self.set(fontFor: .callout, on: view)
             }
         }
@@ -91,7 +99,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var footnote: [UIView]! {
         didSet {
-            footnote.forEach { (view) in
+            footnote.forEach { view in
                 self.set(fontFor: .footnote, on: view)
             }
         }
@@ -99,7 +107,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var caption1: [UIView]! {
         didSet {
-            caption1.forEach { (view) in
+            caption1.forEach { view in
                 self.set(fontFor: .caption1, on: view)
             }
         }
@@ -107,7 +115,7 @@ public class DynamicTypeHelper: NSObject {
 
     @IBOutlet var caption2: [UIView]! {
         didSet {
-            caption2.forEach { (view) in
+            caption2.forEach { view in
                 self.set(fontFor: .caption2, on: view)
             }
         }
