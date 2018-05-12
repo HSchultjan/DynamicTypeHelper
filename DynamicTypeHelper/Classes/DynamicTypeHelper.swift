@@ -35,7 +35,7 @@ public class DynamicTypeHelper: NSObject {
                 if #available(iOS 11.0, *) {
                     self.set(fontFor: .largeTitle, on: view)
                 } else {
-                    self.set(fontFor: .title1, on: view)
+                    fatalError("not supported yet")
                 }
             }
         }
