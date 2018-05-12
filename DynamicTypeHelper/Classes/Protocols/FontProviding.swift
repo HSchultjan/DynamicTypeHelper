@@ -10,4 +10,3 @@ import UIKit
 @objc public protocol ScaledFontProviding: NSObjectProtocol {
     func font(forTextStyle textStyle: UIFontTextStyle) -> UIFont
 }
-

@@ -2,9 +2,11 @@ use_frameworks!
 
 target 'DynamicTypeHelper_Example' do
   pod 'DynamicTypeHelper', :path => '../'
+  pod 'SwiftLint'
 
   target 'DynamicTypeHelper_Tests' do
     inherit! :search_paths
+    pod 'DynamicTypeHelper', :path => '../'
 
     
   end
