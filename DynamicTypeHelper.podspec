@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DynamicTypeHelper'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'DynamicTypeHelper makes working with storyboards and dynamic type easier when you are using a custom font.'
 
 # This description is used to generate tags and improve search results.
